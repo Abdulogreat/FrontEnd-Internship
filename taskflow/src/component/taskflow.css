@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+.hero button {
+  background: white;
+  color: #2575fc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.features, .reviews, .pricing {
+  text-align: center;
+}
+
+.feature-list, .pricing-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature, .price-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+}
+.feature i {
+  font-size: 2em;
+  color: #2575fc;
+}
+
+.review-list blockquote {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.price-card h3 {
+  margin-top: 0;
+}
+.price-card button {
+  background: #2575fc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.price-card button:hover {
+  background: #1a5ed1;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e1e2f;
+  color: white;
+}
+.footer .socials a {
+  color: white;
+  margin: 0 8px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .feature-list, .pricing-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
